@@ -23,7 +23,6 @@ return days[day];
 
 function displayForecast(response) {
     let forecast = response.data.daily;
-    console.log(response.data);
     let forecastElement = document.querySelector("#forecast");
     
      let forecastHTML = `<div class=row>`;
@@ -54,7 +53,6 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-    console.log(coordinates);
     let apiKey = "0f394coc58tc83ab43c50095f3bd3ad9";
     let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(displayForecast);
