@@ -1,10 +1,13 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/271/original/stars2.jpg?1680201147');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
-    color: hsl(257, 84%, 66%);
-    font-size: 24px;
+    color: #fff;
+    font-size: 26px;
     font-weight: 100;
     line-height: 28px;
     margin-bottom: 0;
@@ -19,7 +22,7 @@ li {
     list-style: none;
     margin: 0;
     padding: 0;
-    color: rgb( 135, 135, 135);
+    color: #fff;
     font-size: 16px;
     font-weight: 100;
     line-height: 19px;
@@ -29,14 +32,33 @@ li:first-letter {
     text-transform: capitalize;
 }
 
+.theme-button {
+    font-size: 12px;
+    background: #2c1a4d;
+    color: white;
+    padding: 5 8px;
+    font-family: monospace;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    max-width: 600px;
+    margin: 10px auto;
+    background: rgba(235, 219, 196, 0.7);
+    color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Monsterrat;
+}
+
 .weather-app-wrapper {
     max-width: 600px;
-    margin: 30px auto;
+    margin: 5px auto;
 }
 
 .weather-app {
     padding: 20px;
-    border: 1px solid #E2E2E2;
     border-radius: 5px;
 }
 
@@ -51,7 +73,7 @@ width: 64px;
 }
 
 .weather-temperature strong {
-    color: rgb(33, 33, 33);
+    color: #fff;
     font-size: 60px;
     line-height: 1;
     font-weight: 400;
@@ -76,7 +98,7 @@ width: 64px;
 .weather-forecast {
     margin-top: 20px;
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
 .weather-forecast-date {
@@ -90,4 +112,34 @@ width: 64px;
 .weather-forecast-temperature {
     font-size: 13px;
     
+}
+.source-code {
+    text-align: center;
+}
+
+a {
+    outline: none;
+}
+
+a:link {
+    color: #6900ff;
+}
+
+a:visited {
+    color: #a5c300;
+}
+
+a:focus {
+    text-decoration: none;
+    background: #bae498;
+}
+
+a:hover {
+    text-decoration: none;
+    background: #cdfeaa;
+}
+
+a:active {
+    background: #6900ff;
+    color: #cdfeaa;
 }
