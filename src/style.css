@@ -33,15 +33,23 @@ li:first-letter {
 }
 
 .theme-button {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
     font-size: 12px;
-    background: #2c1a4d;
+    background: #0C0921;
     color: white;
-    padding: 5 8px;
-    font-family: monospace;
+    padding: 5 20px;
+    font-family: Monsterrat;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.theme-button:hover {
+    color: #2c1a4d;
+    background: white;
+}
 .container {
     max-width: 600px;
     margin: 10px auto;
@@ -142,4 +150,11 @@ a:hover {
 a:active {
     background: #6900ff;
     color: #cdfeaa;
+}
+
+.dark {
+    background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/290/original/download-572003.jpg?1680208572');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
 }
